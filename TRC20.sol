@@ -5,7 +5,7 @@ contract TRC20 {
     // Public variables of the token
     string public name;
     string public symbol;
-    uint8 public decimals = 8;
+    uint8 public decimals = 3;
     // 18 decimals is the strongly suggested default, avoid changing it
     uint256 public totalSupply;
 
@@ -27,9 +27,9 @@ contract TRC20 {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    uint256 initialSupply = 1000000;
-    string tokenName = 'CodeXpertToken';
-    string tokenSymbol = 'CDX';
+    uint256 initialSupply = 100000000;
+    string tokenName = 'SAFE ANIMAL AROUND THE WORLD';
+    string tokenSymbol = 'SAAW';
     constructor() public {
 
         totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
